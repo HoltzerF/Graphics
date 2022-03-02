@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <time.h>
 
+// written by Holtzer
+
 // ------------------------------------
 // framebuffer for testing the routines
 // ------------------------------------
@@ -148,9 +150,9 @@ void drawPolygon(vert_t *v, unsigned int n){
 	}
 	
 	// storing edge vertex informations
-	int l_top = 0, l_bot, r_top, r_bot;						// indexing vertices by integers
+	int l_top = 0, l_bot, r_top, r_bot;			// indexing vertices by integers
 	unsigned int l_top_iy, l_bot_iy, r_top_iy, r_bot_iy;	// left and right edge integer y's
-	unsigned int i;											// iterator, later the y position
+	unsigned int i;						// iterator, later the y position
 	
 	// getting the top most vertex (lowest y)
 	for(i = 1; i < n; ++i){
@@ -228,7 +230,7 @@ void drawPolygon(vert_t *v, unsigned int n){
 
 // drawing 30 000 polygons
 
-int	main(){
+int main(){
 	
 	clear(' ');
 	int i, frames;
